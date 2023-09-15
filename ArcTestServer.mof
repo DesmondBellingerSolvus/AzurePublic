@@ -1,0 +1,47 @@
+/*
+@TargetNode='ArcTestServer'
+@GeneratedBy=DesmondAdmin
+@GenerationDate=09/14/2023 13:55:45
+@GenerationHost=SG-00194
+*/
+
+instance of DSC_Firewall as $DSC_Firewall1ref
+{
+Name = "Public";
+ Authentication = "Required";
+ Description = "Opens port 3389 to allow a remote user to RDP into the machine";
+ Direction = "Inbound";
+ Encryption = "Required";
+ ResourceID = "[Firewall]Enable_RDP";
+ ModuleVersion = "9.0.0";
+ RemotePort = {
+    "3389"
+};
+ SourceInfo = "::10::9::Firewall";
+ Action = "Allow";
+ DisplayName = "Enable RDP";
+ ModuleName = "NetworkingDsc";
+ Enabled = "True";
+ Protocol = "TCP";
+ InterfaceType = "RemoteAccess";
+ Ensure = "Present";
+ ConfigurationName = "AzureArc";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="DesmondAdmin";
+
+                        GenerationDate="09/14/2023 13:55:45";
+
+                        GenerationHost="SG-00194";
+
+                        Name="AzureArc";
+
+                    };
