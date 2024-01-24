@@ -1,0 +1,35 @@
+/*
+@TargetNode='localhost'
+@GeneratedBy=DesmondAdmin
+@GenerationDate=01/24/2024 12:28:45
+@GenerationHost=SG-00194
+*/
+
+instance of FileCreate as $FileCreate1ref
+{
+Content = "This is a text file";
+ ModuleVersion = "1.0.0.0";
+ Path = "c:\\DSC\\CreatedByDSCsample.txt";
+ ModuleName = "FileCreatex";
+ ResourceID = "[FileCreate]FileCreateInstanceName";
+ SourceInfo = "C:\\DSC\\FileCreate\\FileCreate.ps1::6::7::FileCreate";
+ ConfigurationName = "FileCreate";
+};
+instance of OMI_ConfigurationDocument
+
+                    {
+ Version="2.0.0";
+
+                        MinimumCompatibleVersion = "1.0.0";
+
+                        CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+
+                        Author="DesmondAdmin";
+
+                        GenerationDate="01/24/2024 12:28:45";
+
+                        GenerationHost="SG-00194";
+
+                        Name="FileCreate";
+
+                    };
